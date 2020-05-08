@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid 2</title>
+    <style>
+      div {
+        margin: 2px;
+        padding: 2px;
+        border: 2px solid black;
+      }
+
+      #main {
+        display: grid;
+        grid-template: min-content 1fr min-content / 1fr 1fr 1fr;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .head {
+        grid-column: 1 / 4;
+        grid-row: 1;
+      }
+      .foot {
+        grid-column: 1 / 4;
+        grid-row: 3;
+      }
+
+      .box1 {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .box2 {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .box3 {
+        grid-column: 3;
+        grid-row: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="head"><h1>Great Website</h1></div>
+      <div class="box1">
+        <h3>Nice layout</h3>
+        <p>This website is nice because it has a nice layout. Aenean quis consectetur felis. Aenean rutrum ullamcorper est, quis bibendum quam scelerisque eu. Etiam enim elit, volutpat nec nunc id, scelerisque hendrerit sem. Nam semper velit sit amet metus tempus faucibus. Integer feugiat viverra condimentum. Ut sollicitudin elementum est, ac molestie purus vulputate a. Quisque pulvinar faucibus nunc. Nam eget sapien id nunc fermentum porta.</p>
+      </div>
+      <div class="box2">
+        <h3>Simple design</h3>
+        <p>This website has a simple design. Pellentesque diam magna, dapibus porttitor dictum nec, convallis et ex. Vestibulum vel ex in ante aliquam facilisis at id elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean nisl dui, pulvinar et tincidunt nec, pretium ut mauris. Quisque molestie non mi at gravida. Curabitur metus tortor, hendrerit sed libero in, facilisis consectetur ante. Praesent ornare nibh at rutrum feugiat. Integer pretium facilisis sem.</p>
+      </div>
+      <div class="box3">
+        <h3>Lightweight</h3>
+        <p>This website doesn't use any CSS frameworks or JavaScript! Quisque sed nisl sit amet ex gravida faucibus ac vel erat. Integer cursus eros vitae nunc tempor pharetra. Maecenas convallis libero quam, vitae lacinia leo scelerisque in. Nunc eu urna sit amet arcu condimentum commodo. Donec sed est pulvinar, molestie tellus ac, eleifend enim. Sed sagittis sapien at ex feugiat dapibus. Cras sed est quis enim euismod malesuada id nec purus. In tempor id orci sit amet ornare. Integer ut arcu luctus, rhoncus sem id, sollicitudin est. Proin mollis volutpat nisi, quis mattis lorem sollicitudin ut. Nulla blandit posuere orci, id facilisis lorem pretium sed.</p>
+      </div>
+      <div class="foot"><p>Some footer text here.</p></div>
+    </div>
+  </body>
+</html>

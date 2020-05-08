@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Orbital 2020 - HTML/CSS Workshop</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/reveal.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/theme/black.min.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/lib/css/monokai.min.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/print/pdf.min.css' : 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/css/print/paper.min.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <style>
+      #logo-img {
+        background: white;
+        border: 10px solid #fff;
+        border-radius: 10px;
+      }
+
+      .reveal .slides .font120 {
+        font-size: 120%;
+      }
+
+      .reveal .slides .font75 {
+        font-size: 75%;
+      }
+
+      .reveal .slides .font45 {
+        font-size: 45%;
+      }
+
+      .reveal .slides .underline {
+        text-decoration: underline;
+      }
+
+      .reveal .slides .mt0 {
+        margin-top: 0;
+      }
+
+      .reveal .slides .mb0 {
+        margin-bottom: 0;
+      }
+
+      .reveal .slides .white-bg {
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="center">
+          <h1>Introduction to HTML/CSS</h1>
+          <h2>Orbital 2020</h2>
+        </section>
+        <section>
+          <h2>Things you need</h1>
+          <a href="https://getfirefox.com/"><img src="firefox-logo.png" style="height: 8ex; padding: 1ex;"></a>
+          <a href="https://code.visualstudio.com/"><img src="vscode-logo.png" style="height: 8ex; padding: 1ex;"></a>
+          <p>Your preferred web browser (e.g. <a href="https://getfirefox.com/">Mozilla Firefox</a>)</p>
+          <p>Your preferred code editor (e.g. <a href="https://code.visualstudio.com/">VS Code</a>)</p>
+        </section>
+        <section>
+          <h2>Things to keep with you</h1>
+          <a href="https://developer.mozilla.org/en-US/docs/Web"><img src="mdn-logo.svg" style="height: 8ex; padding: 1ex;"></a>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></p>
+          <p><a href="https://dev.w3.org/html5/html-author/">HTML 5 specification</a></p>
+        </section>
+        <section>
+          <h2>HyperText Markup Language</h2>
+          <img src="html5-logo.svg" class="white-bg" style="height: 15ex; padding: 1ex;">
+          <p>est. 1990</p>
+        </section>
+        <section data-background-iframe="https://en.wikipedia.org/wiki/Thanos">
+        </section>
+        <section data-background-iframe="thanos-src.html">
+        </section>
+        <section>
+          <section>
+            <h2>A basic HTML document</h2>
+            <p>Open <a href="ex/simple-page.html"><code>simple-page.html</code></a> in your browser.</p>
+            <iframe name="simple-page-1" src="ex/simple-page.html" style="height: 10ex; width: 25em;" class="white-bg"></iframe>
+          </section>
+          <section>
+            <h2>A basic HTML document</h2>
+            <p>Open <a href="ex/simple-page.html"><code>simple-page.html</code></a> in your code editor.</p>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>HTML element</h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+<mark>&lt;html&gt;</mark>
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+<mark>&lt;/html&gt;</mark></code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>HTML element</h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  <mark>&lt;head&gt;&lt;/head&gt;</mark>
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>HTML element</h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  <mark>&lt;body&gt;Bring me Thanos!&lt;/body&gt;</mark>
+&lt;/html&gt;</code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>Open tag</h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  <mark>&lt;head&gt;</mark>&lt;/head&gt;
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>Close tag</h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;<mark>&lt;/head&gt;</mark>
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </section>
+          <section data-transition="none-in slide-out">
+            <h2>Text content</h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;<mark>Bring me Thanos!</mark>&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </section>
+          <section>
+            <h2><code>&lt;head&gt;</code></h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  <mark>&lt;head&gt;&lt;/head&gt;</mark>
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Contains page metadata, like title, links to stylesheets, etc.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">MDN</a></p>
+          </section>
+          <section>
+            <h2><code>&lt;body&gt;</code></h2>
+          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  <mark>&lt;body&gt;Bring me Thanos!&lt;/body&gt;</mark>
+&lt;/html&gt;</code></pre>
+            <p>Contains page contents.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">MDN</a></p>
+          </section>
+          <section>
+            <h2>Document type declaration</h2>
+          <pre class="font120"><code class="html" data-noescape><mark>&lt;!DOCTYPE html&gt;</mark>
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Declares that this document is a HTML document.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">MDN</a>; <a href="https://dev.w3.org/html5/html-author/#doctype-declaration">HTML 5 specification</a></p>
+          </section>
+        </section>
+        <section class="center">
+          <h1>Exploring HTML elements</h1>
+          <p>Let's try out more HTML elements.</p>
+          <p>Follow by modifying <span>simple-page.html</span>, or by adding the elements via the document inspector.</p>
+        </section>
+        <section>
+          <section>
+            <h2>Document inspector</h2>
+            <p>Open by F12 or Ctrl+Shift+C (Cmd+Shift+C on Mac).</p>
+            <img src="devpanel-1.png" style="height: 20ex;">
+          </section>
+          <section>
+            <h2>Create new node</h2>
+            <img src="devpanel-2.png" style="height: 12ex;">
+            <p>Creates new node in the selected element.</p>
+            <p>Does not exist in Chrome; right-click or press F2 to edit-as-HTML instead.</p>
+          </section>
+          <section>
+            <h2>Create new node</h2>
+            <img src="devpanel-3.png" style="height: 20ex;">
+            <p>New node created.</p>
+          </section>
+          <section>
+            <h2>Edit things</h2>
+            <img src="devpanel-4.png" style="height: 20ex;">
+            <p>Double click anything to edit it. Enter to commit.</p>
+          </section>
+        </section>
+        <section>
+          <h2><code>&lt;title&gt;</code> element</h2>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">MDN</a></p>
+          <pre><code class="html" data-noescape>&lt;title&gt;Page title&lt;/title&gt;</code></pre>
+          <p>Goes into <code>&lt;head&gt;</code>.</p>
+          <p>It is the title shown in the tab title, and in search engines, etc.</p>
+        </section>
+        <section>
+          <section>
+            <h2>Heading elements</h2>
+            <p><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>; <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">MDN</a></p>
+            <pre><code class="html" data-trim data-noescape>
+&lt;h1&gt;This is a H1.&lt;/h1&gt;
+&lt;h2&gt;This is a H2.&lt;/h2&gt;
+&lt;h3&gt;This is a H3.&lt;/h3&gt;
+&lt;h4&gt;This is a H4.&lt;/h4&gt;
+&lt;h5&gt;This is a H5.&lt;/h5&gt;
+&lt;h6&gt;This is a H6.&lt;/h6&gt;
+              </code></pre>
+          </section>
+          <section>
+            <h2>Heading elements</h2>
+            <img src="simple-page-heading.png" style="height: 25ex;">
+          </section>
+        </section>
+        <section>
+          <h2>Paragraph element</h2>
+          <p><code>&lt;p&gt;</code>; <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">MDN</a></p>
+          <pre><code class="html" data-trim data-noescape>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+          </code></pre>
+          <img src="simple-page-p.png" style="height: 10ex;">
+          <p>(Never use <code>&lt;br&gt;</code> to break paragraphs!)</p>
+        </section>
+        <section>
+          <h2>List elements</h2>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"><code>&lt;ul&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"><code>&lt;li&gt;</code></a></p>
+          <pre><code class="html" data-trim data-noescape>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+          </code></pre>
+          <img src="simple-page-list.png" style="height: 10ex;">
+        </section>
+        <section>
+          <section class="center">
+            <h2>Anchor element</h2>
+            <p><code>&lt;a&gt;</code>; <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">MDN</a></p>
+            <pre><code class="html" data-trim data-noescape>
+&lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+            </code></pre>
+            <p>Results in: <a href="https://google.com">Google</a></p>
+          </section>
+          <section class="center" data-transition="none-out">
+            <h2>Attribute</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;a <mark>href="https://google.com"</mark>&gt;Google&lt;/a&gt;
+            </code></pre>
+          </section>
+          <section class="center" data-transition="none">
+            <h2>Attribute name</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;a <mark>href</mark>="https://google.com"&gt;Google&lt;/a&gt;
+            </code></pre>
+          </section>
+          <section class="center" data-transition="none-in">
+            <h2>Attribute value</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;a href=<mark>"https://google.com"</mark>&gt;Google&lt;/a&gt;
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h2>Image element</h2>
+          <p><code>&lt;img&gt;</code>; <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">MDN</a></p>
+          <pre><code class="html" data-trim data-noescape>
+&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"&gt;
+          </code></pre>
+          <p>Results in: <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="white-bg" style="margin: 0;"></p>
+          <p>Note: <code>&lt;img&gt;</code> is a <em>void element</em>.</p>
+          <p>It does not need to be closed with <code>&lt;/img&gt;</code> (this is invalid), or self-closed like <code>&lt;img ... /&gt;</code> (this is redundant but acceptable).</p>
+        </section>
+        <section>
+          <h2>Combining elements</h2>
+          <p>Many elements can contain other elements, and combining them usually leads to what you'd expect.</p>
+          <p>How to make a clickable image?</p>
+          <pre><code class="html" data-trim data-noescape>
+&lt;a href="https://google.com"&gt;&lt;img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"&gt;&lt;/a&gt;
+          </code></pre>
+          <p>Results in: <a href="https://google.com"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" class="white-bg" style="margin: 0;"></a></p>
+        </section>
+        <section>
+          <h2>Exercise 1</h2>
+          <p>Recre<a href="ex/exercise-1.html">a</a>te this page.</p>
+          <img src="exercise-1.png" style="height: 22ex;">
+        </section>
+        <section>
+          <h2>Cascading Style Sheets</h2>
+          <img src="css-logo.svg" class="white-bg" style="height: 15ex; padding: 1ex;">
+          <p>est. 1994</p>
+        </section>
+        <section>
+          <section class="center">
+            <h2>Inline <code>style</code></h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+            </code></pre>
+            <p>Results in:</p>
+            <p style="color: blue;">Blue text!</p>
+          </section>
+          <section class="center" data-transition="none-out">
+            <h2>Property</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;p style="<mark>color</mark>: blue;"&gt;Blue text!&lt;/p&gt;
+            </code></pre>
+          </section>
+          <section class="center" data-transition="none-in">
+            <h2>Value</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;p style="color: <mark>blue</mark>;"&gt;Blue text!&lt;/p&gt;
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h2>CSS properties</h2>
+          <p>There are <em>many</em> properties. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index">MDN</a> list.</p>
+          <p class="mb0">Some common properties are:</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color"><code>color</code></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"><code>background</code></a> properties</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font"><code>font</code></a> properties</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"><code>border</code></a> properties</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding"><code>padding</code></a> properties</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin"><code>margin</code></a> properties</li>
+          </ul>
+          <p>Try them out!</p>
+        </section>
+        <section class="center">
+          <h2>HTML/CSS box model</h2>
+          <img src="box-model.png">
+        </section>
+        <section>
+          <section class="center">
+            <p>What if we have many elements?</p>
+            <pre><code class="html" data-trim data-noescape>
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+&lt;p style="color: blue;"&gt;Blue text!&lt;/p&gt;
+            </code></pre>
+          </section>
+          <section class="center">
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  p {
+    color: blue;
+  }
+&lt;/style&gt;
+
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+&lt;p&gt;Blue text!&lt;/p&gt;
+            </code></pre>
+          </section>
+          <section class="center" data-transition="none-out">
+            <h2>Selector</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  <mark>p</mark> {
+    color: blue;
+  }
+&lt;/style&gt;
+            </code></pre>
+          </section>
+          <section class="center" data-transition="none">
+            <h2>Declaration block</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  p <mark>{
+    color: blue;
+  }</mark>
+&lt;/style&gt;
+          </code></pre>
+          </section>
+          <section class="center" data-transition="none-in">
+            <h2>Declaration</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  p {
+    <mark>color: blue;</mark>
+  }
+&lt;/style&gt;
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h2><code>id</code>, <code>class</code></h2>
+          <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  #my-p {
+    /* some declarations */
+  }
+
+  .red {
+    color: red;
+  }
+
+  .em {
+    font-weight: bold;
+  }
+&lt;/style&gt;
+
+&lt;p id="my-p" class="red em"&gt;Red bold paragraph&lt;/p&gt;
+          </code></pre>
+        </section>
+        <section class="center">
+          <h2>Basic CSS selectors</h2>
+          <ul>
+            <li><code>tag</code>: selects elements of tag <code>tag</code></li>
+            <li><code>#element-id</code>: selects element with ID <code>element-id</code></li>
+            <li><code>.class</code>: selects elements of class <code>class</code></li>
+            <li><code>*</code>: selects all elements</li>
+            <li><code>[attr]</code>: selects elements based on <code>attr</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors">MDN</a>)</li>
+          </ul>
+        </section>
+        <section class="center">
+          <h2>Combining selectors</h2>
+          <ul>
+            <li><code>tag.class</code>: selects <code>tag</code> elements of class <code>class</code></li>
+            <li><code>.class1.class2</code>: selects elements of class <code>class1</code> AND <code>class2</code></li>
+            <li><code>.class1, .class2</code>: selects elements of class <code>class1</code> OR <code>class2</code></li>
+          </ul>
+        </section>
+        <section class="center">
+          <h2>External stylesheets</h2>
+          <p>CSS is often put in a separate file from the HTML, and it is simply linked in.</p>
+          <p>In <code>&lt;head&gt;</code>:</p>
+          <pre><code class="html" data-trim data-noescape>
+&lt;link rel="stylesheet" type="text/css" href="theme.css"&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h2>Exercise 2</h2>
+          <p>Style exercise 1 like so, using <a href="ex/exercise-2.html">a</a>n external stylesheet (no inline styles!). <code>font-style</code> may be useful.</p>
+          <img src="exercise-2.png" style="height: 20ex;">
+        </section>
+        <section class="center">
+          <h2>Combinators</h2>
+          <ul>
+            <li><code>X Y</code>: match Y that is a descendant of X</li>
+            <li><code>X &gt; Y</code>: match Y that is a direct child of X</li>
+            <li><code>X ~ Y</code>: match Y that is after X</li>
+            <li><code>X + Y</code>: match Y that is directly after X</li>
+          </ul>
+        </section>
+        <section class="center">
+          <h2><code>&lt;div&gt;</code>, <code>&lt;span&gt;</code></h2>
+          <p><code>&lt;div&gt;</code> is a generic block-level (by default) element.</p>
+          <p><code>&lt;span&gt;</code> is a generic inline (by default) element.</p>
+          <p>They have no separate semantic meaning; they're just used to apply CSS on. ID and classes come in useful here.</p>
+        </section>
+        <section>
+          <h2>Semantic meaning</h2>
+          <p>Many elements have some special meaning to them, even though they have no special default styling. E.g.</p>
+          <ul>
+            <li><code>&lt;p&gt;</code> is a paragraph</li>
+            <li><code>&lt;main&gt;</code> contains the "main" content of the page</li>
+            <li><code>&lt;article&gt;</code> contains an "article" e.g. forum post, news article, etc</li>
+            <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> should contain the header and footer</li>
+          </ul>
+          <p>See <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#HTML_for_structuring_content">MDN's guide</a>.</p>
+        </section>
+        <section>
+          <section>
+            <h2>CSS pseudo-classes</h2>
+            <p>Special classes that allow you to select elements in a certain state. Commonly used:</p>
+            <ul class="font75">
+              <li><code>:hover</code>: elements being hovered over</li>
+              <li><code>:focus</code>: focussed element</li>
+              <li><code>:nth(-last)-of-type()</code>: nth (last) element of the same type among siblings (1-based)</li>
+              <li><code>:nth(-last)-child()</code>: nth (last) element among siblings (1-based)</li>
+              <li><code>:first/last/only-of-type</code>: first/last/only of the same type among siblings</li>
+              <li><code>:first/last/only-child</code>: first/last/only among siblings</li>
+              <li><code>:not(selector)</code>: elements which do not match selector</li>
+            </ul>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Index_of_standard_pseudo-classes">MDN</a></p>
+          </section>
+          <section>
+            <h2><code>nth</code> syntax</h2>
+            <p>The <code>nth/nth-last-child/of-type</code> selectors accept an argument in parentheses, which can be:</p>
+            <ul>
+              <li><code>odd</code>: odd numbered elements</li>
+              <li><code>even</code>: even numbered elements</li>
+              <li><code>An+B</code>: where A, B are integers, elements whose order matches the pattern. You can just specify either <code>An</code> or <code>B</code> only as well.</li>
+            </ul>
+          </section>
+          <section class="center">
+            <h2>Colouring tables</h2>
+            <p>The <code>nth-of-type</code> selector is commonly used to give tables alternating colours.</p>
+            <p><a href="ex/table-demo.html">Demo</a></p>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  table tr:nth-of-type(odd):not(:first-of-type) {
+    background-color: #aaa;
+  }
+&lt;/style&gt;
+            </code></pre>
+          </section>
+        </section>
+        <section class="center">
+          <h2>Exercise 3</h2>
+          <p>Modify the t<a href="ex/exercise-3.html">a</a>ble demo so the colours invert when you hover over the table.</p>
+          <p>No JavaScript needed!</p>
+          <p>Hint: <code>:not</code>, <code>:hover</code></p>
+        </section>
+        <section class="center">
+          <h2>CSS inheritance</h2>
+          <p>When a property is not specified, the element either inherits it from its parent, or it gets a default value.</p>
+          <p>E.g. inherited properties: <code>color</code>, <code>font-*</code>, etc</p>
+          <p>E.g. non-inherited properties: <code>border-*</code>, <code>background-*</code>, etc</p>
+        </section>
+        <section>
+          <a href="https://specifishity.com/specifishity.png"><img src="specifishity.png" style="height: 35ex;"></a>
+        </section>
+        <section class="center">
+          <h1>Layout with CSS</h1>
+        </section>
+        <section>
+          <h2>CSS units</h2>
+          <p>When specifying lengths in CSS (<code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>), you will have to specify them with units.</p>
+          <p>Common units:</p>
+          <ul>
+            <li>em: font point size</li>
+            <li>pt: 1/72 inch</li>
+            <li>px: 1/96 inch</li>
+          </ul>
+        </section>
+        <section>
+          <h2>CSS layout</h2>
+          <p>There are many ways to lay out a page with CSS.</p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">Grid</a>: essentially a table</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout">Flexbox</a>: somewhat like if you restricted CSS grid to 1-D</li>
+            <li>CSS frameworks: like <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://foundation.zurb.com/">Foundation</a>, etc.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods">Legacy</a>: with floats, etc</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h2>CSS grid</h2>
+            <a href="ex/grid-1.html"><img src="grid-1.png" style="height: 25ex"></a>
+          </section>
+          <section data-transition="none-out">
+            <h2>CSS grid usage</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  #grid {
+    <mark>display: grid;</mark>
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  }
+&lt;/style&gt;
+&lt;div id="grid"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  ...
+  &lt;div&gt;9&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>Rows</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  #grid {
+    display: grid;
+    grid-template: <mark>1fr 1fr 1fr</mark> / 1fr 1fr 1fr;
+  }
+&lt;/style&gt;
+&lt;div id="grid"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  ...
+  &lt;div&gt;9&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </section>
+          <section data-transition="none-in">
+            <h2>Columns</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  #grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / <mark>1fr 1fr 1fr</mark>;
+  }
+&lt;/style&gt;
+&lt;div id="grid"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  ...
+  &lt;div&gt;9&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </section>
+          <section>
+            <h2>CSS grid 2</h2>
+            <a href="ex/grid-2.html"><img src="grid-2.png" style="height: 25ex"></a>
+          </section>
+          <section>
+            <h2>CSS grid column lines</h2>
+            <img src="grid-line-column.svg" style="height: 25ex" class="white-bg">
+          </section>
+          <section>
+            <h2>CSS grid row lines</h2>
+            <img src="grid-line-row.svg" style="height: 25ex" class="white-bg">
+          </section>
+          <section data-transition="none-out">
+            <h2>Specifying row and col. span</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  .box1 {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+  .box2 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+  ...
+&lt;/style&gt;
+&lt;div id="grid"&gt;
+  &lt;div class="box1"&gt;1&lt;/div&gt;
+  &lt;div class="box2"&gt;2&lt;/div&gt;
+  ...
+&lt;/div&gt;
+            </code></pre>
+          </section>
+          <section data-transition="none">
+            <h2>Starting "line"</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  .box1 {
+    grid-column: 1;
+    grid-row: <mark>1</mark> / 4;
+  }
+  .box2 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+  ...
+&lt;/style&gt;
+&lt;div id="grid"&gt;
+  &lt;div class="box1"&gt;1&lt;/div&gt;
+  &lt;div class="box2"&gt;2&lt;/div&gt;
+  ...
+&lt;/div&gt;
+            </code></pre>
+          </section>
+          <section data-transition="none-in">
+            <h2>Ending "line"</h2>
+            <pre><code class="html" data-trim data-noescape>
+&lt;style&gt;
+  .box1 {
+    grid-column: 1;
+    grid-row: 1 / <mark>4</mark>;
+  }
+  .box2 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+  ...
+&lt;/style&gt;
+&lt;div id="grid"&gt;
+  &lt;div class="box1"&gt;1&lt;/div&gt;
+  &lt;div class="box2"&gt;2&lt;/div&gt;
+  ...
+&lt;/div&gt;
+            </code></pre>
+          </section>
+        </section>
+        <section>
+          <h2>Exercise 4</h2>
+          <p>Recre<a href="ex/exercise-4.html">a</a>te this.</p>
+          <img src="exercise-4.png" style="height: 22ex">
+        </section>
+        <section class="center">
+          <h2>Where to go from here?</h2>
+          <ul>
+            <li>Experiment!</li>
+            <li>Look through <a href="https://developer.mozilla.org/en-US/docs/Learn">MDN tutorials</a></li>
+            <li>Check out some CSS frameworks: <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://foundation.zurb.com/">Foundation</a>, etc</li>
+            <li>Design your Orbital project</li>
+          </ul>
+        </section>
+        <section class="center">
+          <h2>End</h2>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/js/reveal.min.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/plugin/notes/notes.js', async: true },
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.9.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ],
+        slideNumber: true,
+        fragmentInURL: true,
+        transitionSpeed: 'fast',
+        center: false,
+        hash: true,
+        navigationMode: 'linear'
+      });
+    </script>
+  </body>
+</html>
