@@ -59,8 +59,11 @@
     </style>
   </head>
   <body>
+
     <div class="reveal">
+
       <div class="slides">
+
         <section class="center">
           <h1>Introduction to HTML/CSS</h1>
           <h2>Orbital 2020</h2>
@@ -76,7 +79,7 @@
 
         <section>
           <h2>Things to keep with you</h1>
-          <a href="https://developer.mozilla.org/en-US/docs/Web"><img src="mdn-logo.svg" style="height: 8ex; padding: 1ex;"></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web"><img src="mdn-logo.svg" style="height: 8ex; padding: 1ex; background-color: rgba(0,0,0,0.88)"></a>
           <p><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></p>
           <p><a href="https://dev.w3.org/html5/html-author/">HTML 5 specification</a></p>
         </section>
@@ -87,16 +90,16 @@
           <p>est. 1990</p>
         </section>
 
-        <section data-background-iframe="https://orbital.comp.nus.edu.sg/">
-        </section>
+        <section data-background-iframe="https://orbital.comp.nus.edu.sg/"></section>
 
         <section data-background-iframe="emb/my-orbital.html"></section>
 
+        <!-- A Basic HTML Document -->
         <section>
           <section>
             <h2>A basic HTML document</h2>
             <p>Open <a href="ex/simple-page.html"><code>simple-page.html</code></a> in your browser.</p>
-            <iframe name="simple-page-1" src="ex/simple-page.html" style="height: 10ex; width: 25em;" class="white-bg"></iframe>
+            <iframe name="simple-page-1" src="ex/simple-page.html" style="height: 10ex; width: 25em; border: 0.1rem solid grey; border-radius: 0.3rem;"></iframe>
           </section>
           <section>
             <h2>A basic HTML document</h2>
@@ -104,86 +107,102 @@
           <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </section>
+          <section>
+            <h2>Document type declaration</h2>
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="1">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>Declares that this document is a HTML document.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">MDN</a>; <a href="https://dev.w3.org/html5/html-author/#doctype-declaration">HTML 5 specification</a></p>
+          </section>
+          <section data-transition="none">
+            <h2>HTML element</h2>
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="2,5">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
 &lt;/html&gt;</code></pre>
           </section>
           <section data-transition="none">
             <h2>HTML element</h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
-<mark>&lt;html&gt;</mark>
-  &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
-<mark>&lt;/html&gt;</mark></code></pre>
-          </section>
-          <section data-transition="none">
-            <h2>HTML element</h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="3">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  <mark>&lt;head&gt;&lt;/head&gt;</mark>
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
 &lt;/html&gt;</code></pre>
           </section>
           <section data-transition="none">
             <h2>HTML element</h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="4">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
-  <mark>&lt;body&gt;Bring me Thanos!&lt;/body&gt;</mark>
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
 &lt;/html&gt;</code></pre>
           </section>
           <section data-transition="none">
             <h2>Open tag</h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="3">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   <mark>&lt;head&gt;</mark>&lt;/head&gt;
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
 &lt;/html&gt;</code></pre>
           </section>
           <section data-transition="none">
             <h2>Close tag</h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="3">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;<mark>&lt;/head&gt;</mark>
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
 &lt;/html&gt;</code></pre>
           </section>
-          <section data-transition="none-in slide-out">
-            <h2>Text content</h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;<mark>Bring me Thanos!</mark>&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          </section>
+
+          <!-- Head -->
           <section>
             <h2><code>&lt;head&gt;</code></h2>
-          <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="3">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-  <mark>&lt;head&gt;&lt;/head&gt;</mark>
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;
 &lt;/html&gt;</code></pre>
             <p>Contains page metadata, like title, links to stylesheets, etc.</p>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">MDN</a></p>
           </section>
+
+          <!-- Body -->
           <section>
             <h2><code>&lt;body&gt;</code></h2>
           <pre class="font120"><code class="html" data-noescape>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
-  <mark>&lt;body&gt;Bring me Thanos!&lt;/body&gt;</mark>
+  <mark>&lt;body&gt;Orbital 2020&amp;#8230; Preparing to lift off!&lt;/body&gt;</mark>
 &lt;/html&gt;</code></pre>
             <p>Contains page contents.</p>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">MDN</a></p>
           </section>
-          <section>
-            <h2>Document type declaration</h2>
-          <pre class="font120"><code class="html" data-noescape><mark>&lt;!DOCTYPE html&gt;</mark>
+
+          <!-- Text content -->
+          <section data-transition="none-in slide-out">
+            <h2>Text content</h2>
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="4">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;Bring me Thanos!&lt;/body&gt;
+  &lt;body&gt;<mark>Orbital 2020&amp;#8230; Preparing to lift off!</mark>&lt;/body&gt;
 &lt;/html&gt;</code></pre>
-            <p>Declares that this document is a HTML document.</p>
-            <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">MDN</a>; <a href="https://dev.w3.org/html5/html-author/#doctype-declaration">HTML 5 specification</a></p>
+          </section>
+          <section data-transition="none-in slide-out">
+            <h2>HTML Entities</h2>
+          <pre class="font120"><code class="html" data-noescape data-line-numbers="4">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;Orbital 2020<mark>&amp;#8230;</mark> Preparing to lift off!&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <p>String that begins with &amp; and ends with ; to display special characters.</p>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">MDN</a>, <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">Reference chart</a></p>
           </section>
         </section>
 
@@ -192,28 +211,59 @@
           <p>Let's try out more HTML elements.</p>
           <p>Follow by modifying <span>simple-page.html</span>, or by adding the elements via the document inspector.</p>
         </section>
+
         <section>
           <section>
             <h2>Document inspector</h2>
             <p>Open by F12 or Ctrl+Shift+C (Cmd+Shift+C on Mac).</p>
-            <img src="devpanel-1.png" style="height: 20ex;">
+            <img src="img/devpanel-1.png" style="height: 20ex;">
           </section>
           <section>
             <h2>Create new node</h2>
-            <img src="devpanel-2.png" style="height: 12ex;">
+            <img src="img/devpanel-2.png" style="height: 12ex;">
             <p>Creates new node in the selected element.</p>
             <p>Does not exist in Chrome; right-click or press F2 to edit-as-HTML instead.</p>
           </section>
           <section>
             <h2>Create new node</h2>
-            <img src="devpanel-3.png" style="height: 20ex;">
+            <img src="img/devpanel-3.png" style="height: 20ex;">
             <p>New node created.</p>
           </section>
           <section>
             <h2>Edit things</h2>
-            <img src="devpanel-4.png" style="height: 20ex;">
+            <img src="img/devpanel-4.png" style="height: 20ex;">
             <p>Double click anything to edit it. Enter to commit.</p>
           </section>
+        </section>
+
+        <section>
+          <h2><code>&lt;div&gt;</code> element</h2>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">MDN</a></p>
+          <pre><code class="html" data-noescape>&lt;div&gt;Some content&lt;/div&gt;</code></pre>
+          <p>Along with <code>&lt;span&gt;</code>, two of the most generic tags for content.</p>
+          <p>Simply helps to <em>divide</em> up your content.</p>
+        </section>
+
+        <section>
+          <h2>Semantic meaning</h2>
+          <p>Many elements have some special meaning to them, even though they have no special default styling. E.g.</p>
+          <ul>
+            <li><code>&lt;p&gt;</code> is a paragraph</li>
+            <li><code>&lt;main&gt;</code> contains the "main" content of the page</li>
+            <li><code>&lt;article&gt;</code> contains an "article" e.g. forum post, news article, etc</li>
+            <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> should contain the header and footer</li>
+          </ul>
+          <p>See <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#HTML_for_structuring_content">MDN's guide</a>.</p>
+        </section>
+
+        <section>
+          <h2>Semantic Elements</h2>
+          <p>Why use Semantic Elements?</p>
+          <ul>
+            <li>Accessibility</li>
+            <li>Search Engine Optimization</li>
+            <li>Convey type of data it is carrying</li>
+          </ul>
         </section>
 
         <section>
@@ -223,6 +273,7 @@
           <p>Goes into <code>&lt;head&gt;</code>.</p>
           <p>It is the title shown in the tab title, and in search engines, etc.</p>
         </section>
+
         <section>
           <section>
             <h2>Heading elements</h2>
@@ -321,8 +372,9 @@
 
         <section>
           <h2>Exercise 1</h2>
-          <p>Recre<a href="ex/exercise-1.html">a</a>te this page.</p>
-          <img src="exercise-1.png" style="height: 22ex;">
+          <p>Recre<a href="ex/exercise-1.html">a</a>te this page. Note: Your
+          font may be different. That's alright! We'll fix it soon&trade;</p>
+          <img src="img/exercise-1.png" style="height: 22ex;">
         </section>
 
         <section>
@@ -490,8 +542,9 @@
 
         <section>
           <h2>Exercise 2</h2>
-          <p>Style exercise 1 like so, using <a href="ex/exercise-2.html">a</a>n external stylesheet (no inline styles!). <code>font-style</code> may be useful.</p>
-          <img src="exercise-2.png" style="height: 20ex;">
+          <p>Style exercise 1 like so, using <a href="ex/exercise-2.html">a</a>n external stylesheet (no inline styles!).</p>
+          <p>The font is <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> from Google Fonts. Feel free to explore around!</p>
+          <img src="img/exercise-2.png" style="height: 15ex;">
         </section>
 
         <section class="center">
@@ -505,22 +558,10 @@
         </section>
 
         <section class="center">
-          <h2><code>&lt;div&gt;</code>, <code>&lt;span&gt;</code></h2>
+          <h2>Back to <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code></h2>
           <p><code>&lt;div&gt;</code> is a generic block-level (by default) element.</p>
           <p><code>&lt;span&gt;</code> is a generic inline (by default) element.</p>
           <p>They have no separate semantic meaning; they're just used to apply CSS on. ID and classes come in useful here.</p>
-        </section>
-
-        <section>
-          <h2>Semantic meaning</h2>
-          <p>Many elements have some special meaning to them, even though they have no special default styling. E.g.</p>
-          <ul>
-            <li><code>&lt;p&gt;</code> is a paragraph</li>
-            <li><code>&lt;main&gt;</code> contains the "main" content of the page</li>
-            <li><code>&lt;article&gt;</code> contains an "article" e.g. forum post, news article, etc</li>
-            <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> should contain the header and footer</li>
-          </ul>
-          <p>See <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#HTML_for_structuring_content">MDN's guide</a>.</p>
         </section>
 
         <section>
@@ -741,8 +782,29 @@
           <img src="exercise-4.png" style="height: 22ex">
         </section>
 
+        <!-- Where to go from here -->
+
         <section class="center">
-          <h2>Where to go from here?</h2>
+          <h1>Where to go from here?</h1>
+        </section>
+
+        <section>
+          <h2>Modern JS libraries/frameworks</h2>
+          <ul>
+            <li>Rare to write HTML by hand when developing applications nowadays</li>
+            <li>Modern JS libraries allow you to write "components" in JS, which the library then generates HTML from</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>React Example</h2>
+          <img width="450" src="img/react-code.png" alt="React code" />
+          <img width="450" src="img/react-output.png" alt="React generated HTML in DOM" />
+          <p>Check out the React workshop to learn React!</p>
+        </section>
+
+        <section class="center">
+          <h2>Others</h2>
           <ul>
             <li>Experiment!</li>
             <li>Look through <a href="https://developer.mozilla.org/en-US/docs/Learn">MDN tutorials</a></li>
